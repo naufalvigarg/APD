@@ -1,0 +1,473 @@
+# Program membuat kalkulator bangun ruang
+import os
+
+# cls adalah clearscreen
+# nt untuk windows
+# clear untuk linux dan unix
+
+# Bersihin Layar
+def bersihin_layar():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+# Menu
+def kasih_liat_menu():
+    bersihin_layar()
+    print("Kalkulator Bangun Ruang Sederhana.")
+    print("============================================")
+    print("Pilih Ruang.")
+    print("[1] Persegi")
+    print("[2] Persegi Panjang")
+    print("[3] Prisma Segitiga")
+    print("[4] Trapesium")
+    print("[5] Layang Layang")
+    print("[6] Tabung")
+    print("[7] Lingkaran")
+    print("[8] Segitiga")
+    print("[0] Exit")
+    print("============================================")
+
+    pilih = str(input("Masukan pilihan(1/2/3/4/5/6/7/8/0): "))
+    if (pilih == "1"):
+        Persegi()
+    elif (pilih == "2"):
+        Persegi_Panjang()
+    elif (pilih == "3"):
+        Prisma_Segitiga()
+    elif (pilih == "4"):
+        Trapesium()
+    elif (pilih == "5"):
+        Layang_Layang()
+    elif (pilih == "6"):
+        Tabung()
+    elif (pilih == "7"):
+        Lingkaran()
+    elif (pilih == "8"):
+        Segitiga()
+    elif (pilih == "0"):
+        trims()
+
+# Persegi
+def Persegi():
+    print("Pilih Operasi.")
+    print("[1] Luas Persegi")
+    print("[2] Sisi Persegi")
+    print("[3] Keliling Persegi")
+    print("[4] Kembali ke menu")
+    print("[0] Exit")
+
+    # Ambil input dari user
+    pilih = str(input("Masukan pilihan(1/2/3/4/0): "))
+
+    if (pilih == "1"):
+        luas_persegi()
+    elif (pilih == "2"):
+        sisi_persegi()
+    elif (pilih == "3"):
+        keliling_persegi()
+    elif (pilih == "4"):
+        kembali_ke_menu()
+    elif (pilih == "0"):
+        trims()
+    else:
+        print("Input salah")
+        kembali_ke_menu()
+
+# Persegi Panjang
+def Persegi_Panjang():
+    print("Pilih Operasi.")
+    print("[1] Panjang")
+    print("[2] Lebar")
+    print("[3] Luas Persegi Panjang")
+    print("[4] Keliling Persegi Panjang")
+    print("[5] Kembali ke menu")
+    print("[0] Exit")
+
+    # Ambil input dari user
+    pilih = str(input("Masukan pilihan(1/2/3/4/5/0): "))
+
+    if (pilih == "1"):
+        panjang()
+    elif (pilih == "2"):
+        lebar()
+    elif (pilih == "3"):
+        luas_persegi_panjang()
+    elif (pilih == "4"):
+        keliling_persegi_panjang()
+    elif (pilih == "5"):
+        kembali_ke_menu()
+    elif (pilih == "0"):
+        trims()
+    else:
+        print("Input salah")
+        kembali_ke_menu()
+
+# Prisma Segitiga
+def Prisma_Segitiga():
+    print("Pilih Operasi.")
+    print("[1] Volume prisma segitiga")
+    print("[2] Luas permukaan prisma segitiga")
+    print("[3] Kembali ke menu")
+    print("[0] Exit")
+
+    # Ambil input dari user
+    pilih = str(input("Masukan pilihan(1/2/3/0): "))
+
+    if (pilih == "1"):
+        volume_prisma_segitiga()
+    elif (pilih == "2"):
+        luas_permukaan_prisma_segitiga()
+    elif (pilih == "3"):
+        kembali_ke_menu()
+    elif (pilih == "0"):
+        trims()
+    else:
+        print("Input salah")
+        kembali_ke_menu()
+
+
+# Trapesium
+def Trapesium():
+    print("Pilih Operasi.")
+    print("[1] Keliling Trapesium")
+    print("[2] Luas Trapesium")
+    print("[3] Kembali ke menu")
+    print("[0] Exit")
+
+    # Ambil input dari user
+    pilih = str(input("Masukan pilihan(1/2/3/0): "))
+
+    if (pilih == "1"):
+        keliling_trapesium()
+    elif (pilih == "2"):
+        luas_trapesium()
+    elif (pilih == "3"):
+        kembali_ke_menu()
+    elif (pilih == "0"):
+        trims()
+    else:
+        print("Input salah")
+        kembali_ke_menu()
+
+# Layang Layang
+def Layang_Layang():
+    print("Pilih Operasi.")
+    print("[1] Keliling Layang Layang")
+    print("[2] Luas Layang Layang")
+    print("[3] Kembali ke menu")
+    print("[0] Exit")
+
+    # Ambil input dari user
+    pilih = str(input("Masukan pilihan(1/2/3/0): "))
+
+    if (pilih == "1"):
+        keliling_layang_layang()
+    elif (pilih == "2"):
+        luas_layang_layang()
+    elif (pilih == "3"):
+        kembali_ke_menu()
+    elif (pilih == "0"):
+        trims()
+    else:
+        print("Input salah")
+        kembali_ke_menu()
+
+# Tabung
+def Tabung():
+    print("Pilih Operasi.")
+    print("[1] Volume tabung")
+    print("[2] Luas permukaan tabung")
+    print("[3] Kembali ke menu")
+    print("[0] Exit")
+
+    # Ambil input dari user
+    pilih = str(input("Masukan pilihan(1/2/3/0): "))
+
+    if (pilih == "1"):
+        volume_tabung()
+    elif (pilih == "2"):
+        luas_permukaan_tabung()
+    elif (pilih == "3"):
+        kembali_ke_menu()
+    elif (pilih == "0"):
+        trims()
+    else:
+        print("Input salah")
+        kembali_ke_menu()
+
+# Lingkaran
+def Lingkaran():
+    print("Pilih Operasi.")
+    print("[1] Diameter Lingkaran")
+    print("[2] Jari Jari Lingkaran")
+    print("[3] Luas Lingkaran")
+    print("[4] Keliling Lingkaran")
+    print("[5] Kembali ke menu")
+    print("[0] Exit")
+
+    # Ambil input dari user
+    pilih = str(input("Masukan pilihan(1/2/3/4/5/0): "))
+
+    if (pilih == "1"):
+        diameter_lingkaran()
+    elif (pilih == "2"):
+        jari_jari_lingkaran()
+    elif (pilih == "3"):
+        luas_lingkaran()
+    elif (pilih == "4"):
+        keliling_lingkaran()   
+    elif (pilih == "5"):
+        kembali_ke_menu()
+    elif (pilih == "0"):
+        trims()
+    else:
+        print("Input salah")
+        kembali_ke_menu()
+
+# Segitiga
+def Segitiga():
+    print("Pilih Operasi.")
+    print("[1] Luas Segitiga")
+    print("[2] Keliling Segitiga")
+    print("[3] Tinggi Segitiga")
+    print("[4] Alas")
+    print("[5] Kembali ke menu")
+    print("[0] Exit")
+
+    # Ambil input dari user
+    pilih = str(input("Masukan pilihan(1/2/3/4/5/0): "))
+
+    if (pilih == "1"):
+        luas_segitiga()
+    elif (pilih == "2"):
+        keliling_segitiga()
+    elif (pilih == "3"):
+        tinggi_segitiga()
+    elif (pilih == "4"):
+        alas_segitiga()
+    elif (pilih == "5"):
+        kembali_ke_menu()
+    elif (pilih == "0"):
+        trims()
+    else:
+        print("Input salah")
+        kembali_ke_menu()
+
+# Terimakasih
+def trims():
+    print("Terimakasih Telah Menggunakaan Kalkulator Bangun Ruang Sederhana")
+    input("Tekan Enter untuk keluar")
+    exit()
+
+# Kembali ke menu
+def kembali_ke_menu():
+    print("\n")
+    input("Tekan Enter untuk kembali...")
+    kasih_liat_menu()
+
+# Rumus Persegi
+def luas_persegi():
+    s = float(input("Masukan Sisi: "))
+    L = int(s * s)
+
+    print("Luas Persegi =", L, "cm²")
+    kembali_ke_menu()
+
+def sisi_persegi():
+    kll = float(input("Masukan Keliling: "))
+    s = int(kll / 4)
+
+    print("Sisi Persegi =", s, "cm²")
+    kembali_ke_menu()
+
+def keliling_persegi():
+    s = float(input("Masukan Sisi: "))
+    kll = int(4 * s)
+
+    print("Keliling Persegi =", kll, "cm")
+    kembali_ke_menu()
+
+
+# Rumus Persegi Panjang
+def panjang():
+    L = float(input("Masukan Luas:  "))
+    l = float(input("Masukan Lebar:  "))
+    p = int(L / l)
+
+    print("Panjang Persegi Panjang =", p, "cm²")
+    kembali_ke_menu()
+    
+def lebar():
+    p = float(input("Masukan Panjang:  "))
+    L = float(input("Masukan Luas:  "))
+    l = int (p / L)
+
+    print("Lebar Persegi Panjang =", l, "cm²")
+    kembali_ke_menu()
+
+def luas_persegi_panjang():
+    p = float(input("Masukan Panjang: "))
+    l = float(input("Masukan Lebar: "))
+    L = int(p * l)
+
+    print("Luas permukaan balok =", L, "cm²")
+    kembali_ke_menu()
+
+def keliling_persegi_panjang():
+    p = float(input("Masukan panjang: "))
+    l = float(input("Masukan lebar: "))
+    Kel = int(2 * (p + l))
+
+    print("Keliling Persegi Panjang =", Kel, "cm")
+    kembali_ke_menu()
+
+
+# Rumus prisma segitiga
+def volume_prisma_segitiga():
+    a = float(input("Masukan alas segitiga: "))
+    t = float(input("Masukan tinggi segitiga: "))
+    T = float(input("Masukan tinggi prisma: "))
+    V = int(1 / 2 * a * t * T)
+
+    print("Volume prisma segitiga =", V, "cm³")
+    kembali_ke_menu()
+
+def luas_permukaan_prisma_segitiga():
+    s1 = float(input("Masukan panjang sisi miring segitiga:  "))
+    s2 = a = float(input("Masukan panjang alas segitiga:  "))
+    s3 = t = float(input("Masukan panjang tinggi segitiga:  "))
+    T = float(input("Masukan tinggi prisma:  "))
+    L = int(T * (s1 + s2 + s3) + (2 * 1 / 2 * a * t))
+
+    print("Luas permukaan prisma segitiga =", L, "cm²")
+    kembali_ke_menu()
+
+
+# Rumus trapesium
+def keliling_trapesium():
+    AB = float(input("Masukan AB:  "))
+    BC = float(input("Masukan BC:  "))
+    CD = float(input("Masukan CD:  "))
+    DA = float(input("Masukan DA:  "))
+    kll = int(AB + BC + CD + DA)
+
+    print("Keliling Trapesium =", kll, "cm³")
+    kembali_ke_menu()
+
+def luas_trapesium():
+    a = float(input("Masukan A:  "))
+    b = float(input("Masukan B:  "))
+    t = float(input("Masukan Tinggi:  "))
+    L = int((a + b) * t / 2)
+
+    print("Luas Trapesium =", L, "cm²")
+    kembali_ke_menu()
+
+
+# Rumus Layang Layang
+def luas_layang_layang():
+    d1 = float(input("Masukan Diagonal 1: "))
+    d2 = float(input("Masukan Diagonal 2: "))
+    L = int((d1 * d2 / 2))
+
+    print("Volume Layang Layang =", L, "cm³")
+    kembali_ke_menu()
+
+def keliling_layang_layang():
+    a = float(input("Masukan a:  "))
+    b = float(input("Masukan b:  "))
+    c = float(input("Masukan c:  "))
+    d = float(input("Masukan d:  "))
+    kll = int((a + b + c + d))
+
+    print("Keliling Layang Layang =", kll, "cm²")
+    kembali_ke_menu()
+
+
+# Rumus tabung
+def volume_tabung():
+    phi = 3.14
+    r = float(input("Masukan radius: "))
+    t = float(input("Masukan tinggi: "))
+    V = int(phi * pow(r, 2) * t)
+
+    print("Volume tabung =", V, "cm³")
+    kembali_ke_menu()
+
+def luas_permukaan_tabung():
+    phi = 3.14
+    r = float(input("Masukan radius: "))
+    t = float(input("Masukan tinggi:  cm"))
+    L = int(2 * phi * r * (r + t))
+
+    print("Luas permukaan tabung =", L, "cm²")
+    kembali_ke_menu()
+
+
+# Rumus Lingkaran
+def diameter_lingkaran():
+    r = float(input("Masukan Jari Jari: "))
+    d = int(2 * r)
+
+    print("Diameter Lingkaran =", d, "cm³")
+    kembali_ke_menu()
+
+def jari_jari_lingkaran():
+    d = float(input("Masukan Diameter: "))
+    r = int(d / 2)
+
+    print("Jari Jari Lingkaran =", r, "cm²")
+    kembali_ke_menu()
+    
+def luas_lingkaran():
+    phi = 3.14
+    r = float(input("Masukan Jari Jari "))
+    L = int(phi * r * r)
+
+    print("Luas Lingkaran =", L, "cm²")
+    kembali_ke_menu()
+
+def keliling_lingkaran():
+    phi = 3.14
+    d = float(input("Masukan Diameter: "))
+    kll = int(phi * d)
+
+    print("Keliling Lingkaran =", kll, "cm²")
+    kembali_ke_menu()
+
+
+# Rumus Segitiga
+def luas_segitiga():
+    a = float(input("Masukan Alas Segitiga: "))
+    t = float(input("Masukan Tinggi Segitiga: "))
+    L = int((a * t) / 2)
+
+    print("Luas Segitiga =", L, "cm³")
+    kembali_ke_menu()
+
+def keliling_segitiga():
+    a = float(input("Masukan Sisi A: "))
+    b = float(input("Masukan Sisi B: "))
+    c = float(input("Masukan Sisi C: "))
+    kll = int(a + b + c)
+
+    print("Keliling Segitiga =", kll, "cm²")
+    kembali_ke_menu()
+
+def tinggi_segitiga():
+    L = float(input("Masukan Luas: "))
+    a = float(input("Masukan Alas Segitiga: "))
+    t = int((2 * L) /a )
+
+    print("Tinggi Segitiga =", t, "cm²")
+    kembali_ke_menu()
+
+def alas_segitiga():
+    L = float(input("Masukan Luas: "))
+    t = float(input("Masukan Tinggi Segitiga: "))
+    a = int((2 * L) /t )
+
+    print("Alas Segitiga =", a, "cm²")
+    kembali_ke_menu()
+    
+
+kasih_liat_menu()
