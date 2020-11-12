@@ -15,15 +15,15 @@ def kasih_liat_menu():
     print("Kalkulator Bangun Ruang Sederhana.")
     print("============================================")
     print("Pilih Ruang.")
-    print("[1] Persegi")
-    print("[2] Persegi Panjang")
-    print("[3] Prisma Segitiga")
-    print("[4] Trapesium")
-    print("[5] Layang Layang")
-    print("[6] Tabung")
-    print("[7] Lingkaran")
-    print("[8] Segitiga")
-    print("[0] Exit")
+    print(" 1. Persegi")
+    print(" 2. Persegi Panjang")
+    print(" 3. Prisma Segitiga")
+    print(" 4. Trapesium")
+    print(" 5. Layang Layang")
+    print(" 6. Tabung")
+    print(" 7. Lingkaran")
+    print(" 8. Segitiga")
+    print(" 0. Exit")
     print("============================================")
 
     pilih = str(input("Masukan pilihan(1/2/3/4/5/6/7/8/0): "))
@@ -49,11 +49,11 @@ def kasih_liat_menu():
 # Persegi
 def Persegi():
     print("Pilih Operasi.")
-    print("[1] Luas Persegi")
-    print("[2] Sisi Persegi")
-    print("[3] Keliling Persegi")
-    print("[4] Kembali ke menu")
-    print("[0] Exit")
+    print(" 1. Luas Persegi")
+    print(" 2. Sisi Persegi")
+    print(" 3. Keliling Persegi")
+    print(" 4. Kembali ke menu")
+    print(" 0. Exit")
 
     # Ambil input dari user
     pilih = str(input("Masukan pilihan(1/2/3/4/0): "))
@@ -75,12 +75,12 @@ def Persegi():
 # Persegi Panjang
 def Persegi_Panjang():
     print("Pilih Operasi.")
-    print("[1] Panjang")
-    print("[2] Lebar")
-    print("[3] Luas Persegi Panjang")
-    print("[4] Keliling Persegi Panjang")
-    print("[5] Kembali ke menu")
-    print("[0] Exit")
+    print(" 1. Panjang")
+    print(" 2. Lebar")
+    print(" 3. Luas Persegi Panjang")
+    print(" 4. Keliling Persegi Panjang")
+    print(" 5. Kembali ke menu")
+    print(" 0. Exit")
 
     # Ambil input dari user
     pilih = str(input("Masukan pilihan(1/2/3/4/5/0): "))
@@ -104,10 +104,10 @@ def Persegi_Panjang():
 # Prisma Segitiga
 def Prisma_Segitiga():
     print("Pilih Operasi.")
-    print("[1] Volume prisma segitiga")
-    print("[2] Luas permukaan prisma segitiga")
-    print("[3] Kembali ke menu")
-    print("[0] Exit")
+    print(" 1. Volume prisma segitiga")
+    print(" 2. Luas permukaan prisma segitiga")
+    print(" 3. Kembali ke menu")
+    print(" 0. Exit")
 
     # Ambil input dari user
     pilih = str(input("Masukan pilihan(1/2/3/0): "))
@@ -128,10 +128,10 @@ def Prisma_Segitiga():
 # Trapesium
 def Trapesium():
     print("Pilih Operasi.")
-    print("[1] Keliling Trapesium")
-    print("[2] Luas Trapesium")
-    print("[3] Kembali ke menu")
-    print("[0] Exit")
+    print(" 1. Keliling Trapesium")
+    print(" 2. Luas Trapesium")
+    print(" 3. Kembali ke menu")
+    print(" 0. Exit")
 
     # Ambil input dari user
     pilih = str(input("Masukan pilihan(1/2/3/0): "))
@@ -151,10 +151,10 @@ def Trapesium():
 # Layang Layang
 def Layang_Layang():
     print("Pilih Operasi.")
-    print("[1] Keliling Layang Layang")
-    print("[2] Luas Layang Layang")
-    print("[3] Kembali ke menu")
-    print("[0] Exit")
+    print(" 1. Keliling Layang Layang")
+    print(" 2. Luas Layang Layang")
+    print(" 3. Kembali ke menu")
+    print(" 0. Exit")
 
     # Ambil input dari user
     pilih = str(input("Masukan pilihan(1/2/3/0): "))
@@ -174,10 +174,10 @@ def Layang_Layang():
 # Tabung
 def Tabung():
     print("Pilih Operasi.")
-    print("[1] Volume tabung")
-    print("[2] Luas permukaan tabung")
-    print("[3] Kembali ke menu")
-    print("[0] Exit")
+    print(" 1. Volume tabung")
+    print(" 2. Luas permukaan tabung")
+    print(" 3. Kembali ke menu")
+    print(" 0. Exit")
 
     # Ambil input dari user
     pilih = str(input("Masukan pilihan(1/2/3/0): "))
@@ -197,12 +197,12 @@ def Tabung():
 # Lingkaran
 def Lingkaran():
     print("Pilih Operasi.")
-    print("[1] Diameter Lingkaran")
-    print("[2] Jari Jari Lingkaran")
-    print("[3] Luas Lingkaran")
-    print("[4] Keliling Lingkaran")
-    print("[5] Kembali ke menu")
-    print("[0] Exit")
+    print(" 1. Diameter Lingkaran")
+    print(" 2. Jari Jari Lingkaran")
+    print(" 3. Luas Lingkaran")
+    print(" 4. Keliling Lingkaran")
+    print(" 5. Kembali ke menu")
+    print(" 0. Exit")
 
     # Ambil input dari user
     pilih = str(input("Masukan pilihan(1/2/3/4/5/0): "))
@@ -226,12 +226,12 @@ def Lingkaran():
 # Segitiga
 def Segitiga():
     print("Pilih Operasi.")
-    print("[1] Luas Segitiga")
-    print("[2] Keliling Segitiga")
-    print("[3] Tinggi Segitiga")
-    print("[4] Alas")
-    print("[5] Kembali ke menu")
-    print("[0] Exit")
+    print(" 1. Luas Segitiga")
+    print(" 2. Keliling Segitiga")
+    print(" 3. Tinggi Segitiga")
+    print(" 4. Alas")
+    print(" 5. Kembali ke menu")
+    print(" 0. Exit")
 
     # Ambil input dari user
     pilih = str(input("Masukan pilihan(1/2/3/4/5/0): "))
